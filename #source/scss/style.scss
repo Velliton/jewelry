@@ -1,0 +1,91 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+
+/*--@import "nullstyle.scss";--*/
+
+//миксины
+@mixin flexbox(){
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	font-size: 0;
+}
+@mixin scale($num){
+-moz-transform: scale($num);
+-ms-transform: scale($num);
+-webkit-transform: scale($num);
+-o-transform: scale($num);
+transform: scale($num);
+}
+@mixin anim($time,$delay){
+-webkit-transition: all $time ease $delay; 
+-moz-transition: all $time ease $delay;
+-ms-transition: all $time ease $delay;
+-o-transition: all $time ease $delay;
+transition: all $time ease $delay;
+}
+@mixin rotate($deg){
+-moz-transform: rotate($deg);
+-ms-transform: rotate($deg);
+-webkit-transform: rotate($deg);
+-o-transform: rotate($deg);
+transform: rotate($deg);
+}
+
+@mixin flexorder($val){
+-webkit-box-ordinal-group:$val;
+-moz-box-ordinal-group:$val;
+-ms-flex-order:$val;
+-webkit-order:$val;
+order:$val;
+}
+
+
+//Подключаем шрифты
+//@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+//@font-face {
+//	font-family: 'Bebas';
+//	src: url('../fonts/Bebas.eot');
+//	src: local('☺'), url('../fonts/Bebas.woff') format('woff'), url('../fonts/Bebas.ttf') format('truetype'), url('../fonts/Bebas.svg') format('svg');
+//	font-weight: normal;
+//	font-style: normal;
+//}
+
+//переменная шрифт по умолчанию
+//$font-family: "PT Sans";
+//переменные
+//$minwidth:320px;
+//$mw:880;
+//$md1:$mw+12;
+//$md2:767.98;
+//$md3:767.98;
+//$md4:479.98;
+
+//.container{
+//	max-width: $mw+px;
+//	margin:0 auto;
+//	width:100%;
+//	@media (max-width: $md1+px){
+//		max-width: 750px;
+//	}		
+//	@media (max-width: $md2+px){
+//		max-width: none;
+//		padding:0 10px;}
+//	}
