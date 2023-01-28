@@ -16,6 +16,7 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------*/
 
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Prata&family=Roboto:wght@400;700&display=swap');
 /*--@import "nullstyle.scss";--*/
 
 //миксины
@@ -69,7 +70,11 @@ order:$val;
 //}
 
 //переменная шрифт по умолчанию
-//$font-family: "PT Sans";
+$font-family: "inter";
+$mb:120px;
+body{
+	font-family: "inter";
+}
 //переменные
 //$minwidth:320px;
 //$mw:880;
@@ -89,3 +94,38 @@ order:$val;
 //		max-width: none;
 //		padding:0 10px;}
 //	}
+
+@import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+.container{
+	border: 1px solid red;
+	max-width: 1300px;
+}
+.block{
+	background-color: #eee;
+	border: solid 1px #aaa;
+}
+
+.slider{
+	border: solid 1px #aaa;
+	margin-bottom: $mb;
+}
+.popular{
+	/* border: 1px solid blue; */
+	&__title{
+		font-family: 'Prata';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 40px;
+		line-height: 100%;
+		color: #303030;
+		margin-bottom: 40px;
+	}
+	&__item{
+		background-color: #F8F8F8;
+		text-align: center;
+	}
+}
+
+.test1{
+	
+}
