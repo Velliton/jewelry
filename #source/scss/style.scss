@@ -97,8 +97,16 @@ body{
 
 @import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
 .container{
-	border: 1px solid red;
 	max-width: 1300px;
+}
+.title{
+	font-family: 'Prata';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 100%;
+	color: #303030;
+	margin-bottom: 40px;
 }
 .block{
 	background-color: #eee;
@@ -110,22 +118,77 @@ body{
 	margin-bottom: $mb;
 }
 .popular{
+	margin-bottom: $mb;
 	/* border: 1px solid blue; */
 	&__title{
-		font-family: 'Prata';
-		font-style: normal;
-		font-weight: 400;
-		font-size: 40px;
-		line-height: 100%;
-		color: #303030;
-		margin-bottom: 40px;
+		
 	}
 	&__item{
 		background-color: #F8F8F8;
-		text-align: center;
+		min-height: 259px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+}
+.articles{
+	margin-bottom: 80px;
+	&__top{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__image{
+		margin-bottom: 22px;
+	}
+	&__date{
+		font-size: 14px;
+		line-height: 100%;
+		color: #8F8F8F;
+		margin-bottom: 12px;
+	}
+	&__subtitle{
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 150%;
+		color: #303030;
+	}
+	&__item{
+		
+	}
+	&__bottom{
+		
 	}
 }
 
-.test1{
-	
+.discount{
+	margin-bottom: 80px;
+	&__item{
+		display: flex;
+		background-color: #F8F8F8;
+	}
+	&__text{
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 160%;
+		text-transform: uppercase;
+		color: #303030;
+		margin-top: 72px;
+		margin-left: 20px;
+	}
+	&__count{
+		background-color: #43807F;
+		&__text{
+			font-weight: 600;
+			font-size: 24px;
+			line-height: 160%;
+			color: #FFFFFF;
+			
+		}
+	}
+}
+
+span{
+	font-size: 36px;
 }

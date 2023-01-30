@@ -5046,8 +5046,17 @@ body {
   }
 }
 .container {
-  border: 1px solid red;
   max-width: 1300px;
+}
+
+.title {
+  font-family: "Prata";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 100%;
+  color: #303030;
+  margin-bottom: 40px;
 }
 
 .block {
@@ -5061,18 +5070,84 @@ body {
 }
 
 .popular {
+  margin-bottom: 120px;
   /* border: 1px solid blue; */
-}
-.popular__title {
-  font-family: "Prata";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 100%;
-  color: #303030;
-  margin-bottom: 40px;
 }
 .popular__item {
   background-color: #F8F8F8;
-  text-align: center;
+  min-height: 259px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.articles {
+  margin-bottom: 80px;
+}
+.articles__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.articles__image {
+  margin-bottom: 22px;
+}
+.articles__date {
+  font-size: 14px;
+  line-height: 100%;
+  color: #8F8F8F;
+  margin-bottom: 12px;
+}
+.articles__subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #303030;
+}
+.discount {
+  margin-bottom: 80px;
+}
+.discount__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #F8F8F8;
+}
+.discount__text {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 160%;
+  text-transform: uppercase;
+  color: #303030;
+  margin-top: 72px;
+  margin-left: 20px;
+}
+.discount__count {
+  background-color: #43807F;
+}
+.discount__count__text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 160%;
+  color: #FFFFFF;
+}
+
+span {
+  font-size: 36px;
 }

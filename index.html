@@ -15,59 +15,83 @@
 	<!-- Отображаемое тело страницы -->
 	<body>
 		<div class="container p-0">
-			<header class="header row">
-				<div class="col-3">
-					<div class="block">лого</div>
+			<header class="header">
+				<div class="header__top">
+					<div class="header__top__location">
+						<img src="./img/icons/location.svg" alt="">
+						<p>Санкт Петербург</p>
+					</div>
+					<div class="header__top__phone">
+						<img src="./img/icons/phone.svg" alt="">
+						<p>89234095553</p>
+					</div>
 				</div>
-				<div class="col">
-					<div class="block">навигация</div>
-				</div>
-				<div class="col-3">
-					<div class="block">навигация</div>
+				<div class="header__bottom">
+					<nav class="header__menu">
+						<ul class="header__menu__list">
+							<li>
+								<a class="header__menu__link" href="#">Каталог</a>	
+							</li>
+							<li>
+								<a class="header__menu__link" href="#">Акции</a>	
+							</li>
+							<li> 
+								<a class="header__menu__link" href="#">Бренды</a>
+							</li>
+							<li class="header__menu__link">Магазины</li>
+							<li class="header__menu__link">О нас</li>
+							<li class="header__menu__link">Доставка и оплата</li>
+							<li class="header__menu__link">Статьи</li>
+						</ul>
+					</nav>
+					<div class="header__search">
+						<input type="text" placeholder="поиск по"> 
+						<img src="./img/icons/search.svg" alt="">
+					</div>
 				</div>
 			</header>
-			<section class="slider">ewer</section>
+			<section class="slider"></section>
 			<section class="popular">
 				<div class="popular__top">
-					<p class="popular__title">
+					<p class="popular__title title">
 						Популярные категории
 					</p>
 				</div>
 				<div class="popular__bottom row">
 					<div class="col-md-4 col-lg-2 gy-1">
 						<div class="popular__item">
-							<img src="./img/popular/pop_01.jpg" alt="">
+							<img src="./img/popular/pop_01.png" alt="">
 							<p>Кольца</p>
 						</div>
 						
 					</div>
 					<div class="col-md-4 col-lg-2 gy-1">
 						<div class="popular__item">
-							<img src="./img/popular/pop_02.jpg" alt="">
+							<img src="./img/popular/pop_02.png" alt="">
 							<p>Серьги</p>
 						</div>
 					</div>
 					<div class="col-md-4 col-lg-2 gy-1">
 						<div class="popular__item">
-							<img src="./img/popular/pop_03.jpg" alt="">
+							<img src="./img/popular/pop_03.png" alt="">
 							<p>Помолвочные кольца</p>
 						</div>
 					</div>
 					<div class="col-md-4 col-lg-2 gy-1">
 						<div class="popular__item">
-							<img src="./img/popular/pop_04.jpg" alt="">
+							<img src="./img/popular/pop_04.png" alt="">
 							<p>Браслеты</p>
 						</div>
 					</div>
 					<div class="col-md-4 col-lg-2 gy-1">
 						<div class="popular__item">
-							<img src="./img/popular/pop_05.jpg" alt="">
+							<img src="./img/popular/pop_05.png" alt="">
 							<p>Колье и подвески</p>
 						</div>
 					</div>
 					<div class="col-md-4 col-lg-2 gy-1">
 						<div class="popular__item">
-							<img class="popular__image" src="./img/popular/pop_06.jpg" alt="">
+							<img class="popular__image" src="./img/popular/pop_06.png" alt="">
 							<p class="popular__name">Часы</p>
 						</div>
 					</div>
@@ -76,9 +100,108 @@
 			</section>
 			
 			<section></section>
+			<section class="discount row">
+				<div class="col-4">
+					<div class="discount__item">
+						<div class="discount__description">
+							<p class="discount__text">Скидки на все украшения с бриллиантами</p>
+							<div class="discount__count">
+								<p class="discount__count__text">До <span>-50%</span></p>
+							</div>
+						</div>
+						<div class="discount__image">
+							<img src="./img/discount/discount_01.png" alt="">
+						</div>
+
+					</div>
+					
+				</div>
+				<div class="col-4">
+					<div class="discount__item">
+						<div class="discount__description">
+							<p class="discount__text">Скидки на кольца и браслеты</p>
+							<div class="discount__count">
+								<p>До -40%</p>
+							</div>
+						</div>
+						<div class="discount__image">
+							<img src="./img/discount/discount_02.png" alt="">
+						</div>
+
+					</div>
+					
+				</div>
+				<div class="col-4">
+					<div class="discount__item">
+						<div class="discount__description">
+							<p class="discount__text">снижение цен  на обручальные кольца</p>
+							<div class="discount__count">
+								<p>До -60%</p>
+							</div>
+						</div>
+						<div class="discount__image">
+							<img src="./img/discount/discount_03.png" alt="">
+						</div>
+
+					</div>
+					
+				</div>
+			</section>
 			<section></section>
-			<section></section>
-			<section></section>
+			<section class="articles">
+				<div class="articles__top">
+					<p class="articles__title title">
+						Статьи
+					</p>
+					<a href="#">читать все</a>
+				</div>
+				<div class="articles__bottom row">
+					<div class="col-md-6 col-lg-6 col-xl-3">
+						<div class="articles__item">
+							<img src="./img/articles/article_01.jpg" alt="" class="articles__image">
+							<p class="articles__date">
+								21 сентября 2021
+							</p>
+							<p class="articles__subtitle">
+								Обручальные кольца: тренды 2021
+							</p>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-6 col-xl-3">
+						<div class="articles__item">
+							<img src="./img/articles/article_02.jpg" alt="" class="articles__image">
+							<p class="articles__date">
+								25 сентября 2021
+							</p>
+							<p class="articles__subtitle">
+								Главные ювелирные тренды года
+							</p>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-6 col-xl-3">
+						<div class="articles__item">
+							<img src="./img/articles/article_03.jpg" alt="" class="articles__image">
+							<p class="articles__date">
+								21 сентября 2021
+							</p>
+							<p class="articles__subtitle">
+								Жемчуг: 7 малоизвестных фактов о культовом украшении
+							</p>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-6 col-xl-3">
+						<div class="articles__item">
+							<img src="./img/articles/article_04.jpg" alt="" class="articles__image">
+							<p class="articles__date">
+								21 сентября 2021
+							</p>
+							<p class="articles__subtitle">
+								Как отличить золото от подделки: 10 практических советов
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
 		</div>
 
 
