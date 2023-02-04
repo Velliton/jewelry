@@ -114,26 +114,96 @@ body{
 }
 .header{
 	margin-bottom: 20px;
+	&__top{
+		&__left{
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+		}
+		&__location{
+			display: flex;
+			margin-right: 60px;
+			align-items: center;
+		}
+		&__phone{
+			display: flex;
+		}
+		&__center{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		&__right{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+	&__bottom{
+		background: #F8F8F8;
+		align-items: center;
+	}
+	&__menu{
+		
+		
+	}
+	&__search{
+		
+		input{
+			padding: 24px;
+		}
+	}
+	&__menu__list{
+		display: flex;
+	}
+	&__menu__link{
+		margin-left: 60px;
+		font-weight: 500;
+		font-size: 13px;
+		line-height: 100%;
+		text-transform: uppercase;
+		color: #303030;
+	}
+}
+.btn{
+	background: #303030;
+	border: none;
+	color: white;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
 }
 .slider{
 	margin-bottom: $mb;
 	background: #F8F8F8;
 	&__description{
-		margin-left: 10%;
-		margin-top: 30%;
+		margin-left: 126px;
+		margin-top: 176px;
 		button{
-			background: #303030;
-			border: none;
-			color: white;
 			padding: 20px 56px;
-			text-align: center;
-			text-decoration: none;
-			font-size: 14px;
-			font-weight: 500;
-			text-transform: uppercase;
-			
+		}
+		&__condition{
+			margin-bottom: 30px;
+			font-family: "Prata";
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 100%;
+			color: #303030;
+		}
+		&__subject{
+			font-family: 'Prata';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 50px;
+			line-height: 100%;
+			color: #303030;
+			margin-bottom: 54px;
 		}
 	}
+	
 }
 .popular{
 	margin-bottom: $mb;
@@ -209,5 +279,29 @@ body{
 
 span{
 	font-size: 36px;
+	
 }
 
+
+.logo{
+	&__top{
+		font-family: 'Prata';
+		font-weight: 400;
+		font-size: 32px;
+		line-height: 100%;
+		color: #E1A661;
+		span{
+			color: #303030;
+			font-size: 34px;
+		}
+	}	
+	&__bottom{
+		font-family: 'Roboto Condensed';
+		font-style: normal;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 100%;
+		letter-spacing: 0.27em;
+		color: #919191;
+	}
+}
