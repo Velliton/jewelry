@@ -18,7 +18,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Prata&family=Roboto:wght@400;700&display=swap');
 /*--@import "nullstyle.scss";--*/
-
+@import "./slider.scss";
 //миксины
 @mixin flexbox(){
 	display: -webkit-box;
@@ -114,6 +114,12 @@ h3{
 	&:active{
 		background: #000000;
 	}
+}
+.btn__circle{
+	padding: 13px 30px;
+	color: #303030;
+	font-size: 14px;
+	border-radius: 21px;
 }
 
 .header{
@@ -415,6 +421,47 @@ h3{
 	}	
 }
 
+.sale{
+
+}
+
+.discount{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 1rem;
+	margin-bottom: $mb-section;
+	&__item{
+		max-width: 420px;
+		display: flex;
+	}
+}
+
+.articles{
+	&__top{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		a{
+			color: #303030;
+		}
+
+	}
+	&__bottom{
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+	&__item{
+		max-width: 312px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+}
 
 
 
@@ -422,8 +469,7 @@ h3{
 
 
 
-
-
+/* 
 @media (max-width:767px){
 	.header__burger{
 		position: absolute;
@@ -472,4 +518,4 @@ h3{
 		height: 100%;
 		background-color: #fff;
 	}
-}
+} */
