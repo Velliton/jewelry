@@ -120,6 +120,13 @@ h3{
 	color: #303030;
 	font-size: 14px;
 	border-radius: 21px;
+	&:hover{
+		background: #DDDDDD;
+	}
+	&:active{
+		background: #303030;
+		color: #FFFFFF;
+	}
 }
 
 .header{
@@ -412,17 +419,40 @@ h3{
 	&__item{
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: space-around;
 		align-items: center;
 		background-color: #F8F8F8;
 		min-height: 259px;
-		/* margin-right: 10px; */
 		min-width: 200px;
+		img{
+			margin-bottom: -40px;
+			&:hover{
+				width: 70%;
+			}
+		}
+		p{
+		}
 	}	
 }
 
 .sale{
-
+	margin-bottom: $mb-section;
+	&__top{
+		margin-bottom: 36px;
+	}
+	&__bottom{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 1rem;
+	}
+	&__item{
+		max-width:310px;
+		border: 1px solid #F0F0F0;
+	}
+	&__title{
+		margin-bottom: 24px;
+	}
 }
 
 .discount{
@@ -431,9 +461,11 @@ h3{
 	flex-wrap: wrap;
 	gap: 1rem;
 	margin-bottom: $mb-section;
+	
 	&__item{
 		max-width: 420px;
 		display: flex;
+		background: #F8F8F8;
 	}
 }
 

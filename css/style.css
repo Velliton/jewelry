@@ -134,6 +134,13 @@ h2 {
   font-size: 14px;
   border-radius: 21px;
 }
+.btn__circle:hover {
+  background: #DDDDDD;
+}
+.btn__circle:active {
+  background: #303030;
+  color: #FFFFFF;
+}
 
 .header {
   margin-top: 24px;
@@ -467,16 +474,44 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   background-color: #F8F8F8;
   min-height: 259px;
-  /* margin-right: 10px; */
   min-width: 200px;
+}
+.popular__item img {
+  margin-bottom: -40px;
+}
+.popular__item img:hover {
+  width: 70%;
+}
+.sale {
+  margin-bottom: 120px;
+}
+.sale__top {
+  margin-bottom: 36px;
+}
+.sale__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1rem;
+}
+.sale__item {
+  max-width: 310px;
+  border: 1px solid #F0F0F0;
+}
+.sale__title {
+  margin-bottom: 24px;
 }
 
 .discount {
@@ -496,6 +531,7 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background: #F8F8F8;
 }
 
 .articles__top {
