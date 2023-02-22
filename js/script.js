@@ -7,14 +7,20 @@ $(document).ready(function() {
         adaptiveHeight:true,        
     });
 
-})
-
-$(document).ready(function() {
-    $('.slider2').slick({
+    $('.sale__slider').slick({
         arrows: true,
+        dots: false,
+        cssEase: 'linear',
+        slidesToShow: 4,
+        adaptiveHeight:true,        
+    });
+
+    $('.sale__item__slider').slick({
+        arrows: false,
         dots: true,
         cssEase: 'linear',
         slidesToShow: 1,
+        adaptiveHeight:true,        
     });
 
 })
