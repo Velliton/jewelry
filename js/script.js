@@ -12,7 +12,8 @@ $(document).ready(function() {
         dots: false,
         cssEase: 'linear',
         slidesToShow: 4,
-        adaptiveHeight:true,        
+        adaptiveHeight:true, 
+        swipe: false       
     });
 
     $('.sale__item__slider').slick({

@@ -1,0 +1,159 @@
+.header{
+	margin-top:24px;
+	margin-bottom: 20px;
+	&__top{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 23px;
+	}
+	&__left{
+		display: flex;
+		/* border: 1px solid grey; */
+		margin-top: 10px;
+	}
+	&__location{
+		display: flex;
+		margin-right: 60px;
+		&__icon{
+			margin-right: 10px;
+		}
+		&__dropdown{
+			margin-right: 10px;
+		}
+		&:hover{
+			opacity: 0.5;
+		}
+	}
+	&__phone{
+		display: flex;
+		&__icon{
+			margin-right: 10px;
+		}
+		&:hover{
+			opacity: 0.5;
+		}
+	}
+	&__logo{
+		margin-left: -25px;
+		/* border: 1px solid grey; */
+	}
+	&__right{
+		margin-top: 10px;
+		display: flex;
+		/* border: 1px solid grey; */
+	}
+	&__icons{
+		position: relative;
+		display: flex;
+		&__basket{
+			margin-left: 35px;
+			&:hover{
+				opacity: 0.5;
+			}
+		}
+		&__statistics{
+			margin-left: 35px;
+			&:hover{
+				opacity: 0.5;
+			}
+		}
+		&__like{
+			&:hover{
+				opacity: 0.5;
+			}
+		}
+		&__counter{
+			&:hover{
+				opacity: 0.5;
+			}
+			top: -10px;
+			left: 10px;
+			/* border: 1px solid grey; */
+			position: absolute;
+			border-radius: 50%;
+			background: #E46942;
+			&__text{
+				
+				font-size: 10px;
+				font-weight: 700;
+				padding: 3px;
+				color: #FFFFFF;
+			}
+			
+		}
+		
+	}
+	&__account{
+		display: flex;
+		margin-right: 70px;
+		&__registration{
+			margin-left: 20px;
+			&:hover{
+				opacity: 0.5;
+			}
+		}
+		&__enter{
+			position: relative;
+			::after{
+				content: "";
+				
+				display: block;
+				width: 1px;
+				height: 10px;
+				background-color: black;
+				position: absolute;
+				left: 45px;
+				top: 3px;		
+			}
+			&:hover{
+				opacity: 0.5;
+			}
+		}
+		
+	}
+	&__bottom{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background: #F8F8F8;
+	}
+	&__menu{
+		padding: 25px 0px;
+	}
+	&__list{
+		display: flex;
+		li{
+			margin-left: 60px;
+		}
+	}
+	&__link{
+		font-weight: 500;
+		font-size: 13px;
+		text-transform: uppercase;
+		color: #303030;
+		&:hover{
+			opacity: 0.5;
+		}
+	}
+	&__search{
+		position: relative;
+		height: 100%;
+		padding: 25px 47px;
+		border-left: 1px solid #F1F1F1;
+		&__input{
+			width: 200px;
+			background-color:#F8F8F8;
+			font-size: 14px;
+		}
+		&__icon{
+			position: absolute;
+			left:8%;
+			top: 40%;
+		}
+	}
+	&__burger{
+		display: none;
+	}
+
+}
