@@ -7,6 +7,10 @@
 		<title>	Golden store </title>
 		<!-- Подключаем CSS -->
 		<link rel="stylesheet" href="css/style.css" />
+		    <!-- Добавляем стили из CDN -->
+			<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css"/>
+			<!-- Добавляем тему по умолчанию из CDN -->
+			<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 		<!-- Кодировка страницы -->
@@ -450,120 +454,278 @@
 				</section>
 
 				<section class="products-day">
-					<h2 class="title">Товар дня</h2>
-					<div class="products-day__body">
-						<div class="products-day__left">
-							<div class="products-day__left__tabs">
-								<p class="products-day__tabs__item">New</p>
-								<p class="products-day__tabs__item -y">Хит</p>
-								<p class="products-day__tabs__item -g">Sale</p>
-							</div>
-							<div class="products-day__left__slider">
-								<img src="./img/goods/goods_01.jpg" alt="">
-							</div>
+					<div class="products-day__top">	
+						<h2 class="title">Товар дня</h2>
+					<div class="slider__buttons">
+						<div class="prev">
+							тест
 						</div>
-						<div class="products-day__right">
-							<div class="products-day__rank">
-								<img src="./img/icons/Star1.svg" alt="">
-								<img src="./img/icons/Star1.svg" alt="">
-								<img src="./img/icons/Star1.svg" alt="">
-								<img src="./img/icons/Star1.svg" alt="">
-								<img src="./img/icons/Star1.svg" alt="">
-							</div>
-							<h3 class="products-day__rank__name">Кольцо из золота с бриллиантами</h3>
-							<p class="products-day__rank__articul">Артикул: 1012076</p>
-							<div class="products-day__promotion">
-								<div class="products-day__price">
-									<p class="products-day__real__price">22 000 ₽</p>
-									<p class="products-day__discount__price">22 000 ₽</p>
-									<p class="products-day__discount">-45%</p>
-									
+						<div class="next">
+							проверка
+						</div>
+					</div>
+					</div>
+					
+					<div class="products-day__body product__slider slick-slider" id="2">
+						<div class="product__slider__item">
+							<div class="products-day__left">
+								<div class="products-day__left__tabs">
+									<p class="products-day__tabs__item">New</p>
+									<p class="products-day__tabs__item -y">Хит</p>
+									<p class="products-day__tabs__item -g">Sale</p>
 								</div>
-								<div class="deadline">
-									<div class="deadline-format">
-										<div class="deadline-item">
-											<h4 class="hours"></h4>
-											<span>часов</span>
+								<div class="products-day__left__slider">
+									<div class="product__item__slider">
+										<div>
+											<img src="./img/goods/goods_01.jpg" alt="">
 										</div>
-									</div>
-									
-									<div class="deadline-format">
-										<div class="deadline-item">
-											<h4 class="mins"></h4>
-											<span>минут</span>
+										<div>
+											<img src="./img/goods/goods_01.jpg" alt="">
 										</div>
-									</div>
-									
-									<div class="deadline-format">
-										<div class="deadline-item">
-											<h4 class="seconds"></h4>
-											<span>секунд</span>
+										<div>
+											<img src="./img/goods/goods_01.jpg" alt="">
 										</div>
 									</div>
 									
 								</div>
 							</div>
-							<div class="products-day__color">
-								<p class="products-day__color__text">Цвет</p>
-								<div class="products-day__color-list">
-									<button class="products-day__color-button">
-										<span class="products-day__color-button__grey"></span>
-									</button>
-									<button class="products-day__color-button">
-										<span class="products-day__color-button__orange"></span>
-									</button>
-									<button class="products-day__color-button">
-										<span class="products-day__color-button__brown"></span>
-									</button>
-									<button class="products-day__color-button">
-										<span class="products-day__color-button__green"></span>
-									</button>
+	
+							<div class="products-day__right">
+								<div class="products-day__rank">
+									<img src="./img/icons/Star1.svg" alt="">
+									<img src="./img/icons/Star1.svg" alt="">
+									<img src="./img/icons/Star1.svg" alt="">
+									<img src="./img/icons/Star1.svg" alt="">
+									<img src="./img/icons/Star1.svg" alt="">
 								</div>
-							</div>
-							<div class="products-day__size">
-								<div class="products-day__size__top">
-									<p class="products-day__size-text">Размер</p>
-									<button class="producst-day__size__info">?</button>
+								<h3 class="products-day__rank__name">Кольцо из золота с бриллиантами</h3>
+								<p class="products-day__rank__articul">Артикул: 1012076</p>
+								<div class="products-day__promotion">
+									<div class="products-day__price">
+										<p class="products-day__real__price">22 000 ₽</p>
+										<p class="products-day__discount__price">22 000 ₽</p>
+										<p class="products-day__discount">-45%</p>
+										
+									</div>
+									<div class="deadline">
+										<div class="deadline-format">
+											<div class="deadline-item">
+												<h4 class="hours"></h4>
+												<span>часов</span>
+											</div>
+										</div>
+										
+										<div class="deadline-format">
+											<div class="deadline-item">
+												<h4 class="mins"></h4>
+												<span>минут</span>
+											</div>
+										</div>
+										
+										<div class="deadline-format">
+											<div class="deadline-item">
+												<h4 class="seconds"></h4>
+												<span>секунд</span>
+											</div>
+										</div>
+										
+									</div>
 								</div>
-								<div class="products-day__size__bottom">
-									<buttton class="products-day__size__button">16,5</buttton>
-									<buttton class="products-day__size__button">17,5</buttton>
-									<buttton class="products-day__size__button">18,5</buttton>
-									<buttton class="products-day__size__button">19,5</buttton>
-									<buttton class="products-day__size__button">20</buttton>
-									<buttton class="products-day__size__button">21</buttton>
-									<buttton class="products-day__size__button">22</buttton>
-									<buttton class="products-day__size__button">23</buttton>
-									<buttton class="products-day__size__button">24</buttton>
-									<buttton class="products-day__size__button">25</buttton>
+								<div class="products-day__color">
+									<p class="products-day__color__text">Цвет</p>
+									<div class="products-day__color-list">
+										<button class="products-day__color-button">
+											<span class="products-day__color-button__grey"></span>
+										</button>
+										<button class="products-day__color-button">
+											<span class="products-day__color-button__orange"></span>
+										</button>
+										<button class="products-day__color-button">
+											<span class="products-day__color-button__brown"></span>
+										</button>
+										<button class="products-day__color-button">
+											<span class="products-day__color-button__green"></span>
+										</button>
+									</div>
 								</div>
-							</div>
-						
-						
-								
+								<div class="products-day__size">
+									<div class="products-day__size__top">
+										<p class="products-day__size-text">Размер</p>
+										<button class="producst-day__size__info">?</button>
+									</div>
+									<div class="products-day__size__bottom">
+										<buttton class="products-day__size__button">16,5</buttton>
+										<buttton class="products-day__size__button">17,5</buttton>
+										<buttton class="products-day__size__button">18,5</buttton>
+										<buttton class="products-day__size__button">19,5</buttton>
+										<buttton class="products-day__size__button">20</buttton>
+										<buttton class="products-day__size__button">21</buttton>
+										<buttton class="products-day__size__button">22</buttton>
+										<buttton class="products-day__size__button">23</buttton>
+										<buttton class="products-day__size__button">24</buttton>
+										<buttton class="products-day__size__button">25</buttton>
+									</div>
+								</div>
 							
-							<div class="products-day__action">
-								<div class="products-day__buttons">
-									<button class="btn">в корзину</button>
-									<button class="btn">купить в 1 клик</button>
+							
+									
+								
+								<div class="products-day__action">
+									<div class="products-day__buttons">
+										<button class="btn">в корзину</button>
+										<button class="btn">купить в 1 клик</button>
+									</div>
+									<div class="products-day__icons">
+										<div class="products-day__icons__save">
+											<img src="./img/icons/like.svg" alt="" width="18px">
+											<p>Сохранить</p>
+										</div>	
+										<div class="products-day__icons__compare">
+											<img src="./img/icons/statistics.svg" alt="" width="14px">
+											<p>Сравнить</p>
+										</div>
+										<div class="products-day__icons__share">
+											<img src="./img/icons/share.svg" alt="" width="18px">
+											<p>Поделиться</p>
+										</div>
+									</div>
 								</div>
-								<div class="products-day__icons">
-									<div class="products-day__icons__save">
-										<img src="./img/icons/like.svg" alt="" width="18px">
-										<p>Сохранить</p>
-									</div>	
-									<div class="products-day__icons__compare">
-										<img src="./img/icons/statistics.svg" alt="" width="14px">
-										<p>Сравнить</p>
+	
+							</div>
+						</div>
+						<div class="product__slider__item">
+							<div class="products-day__left">
+								<div class="products-day__left__tabs">
+									<p class="products-day__tabs__item">New</p>
+									<p class="products-day__tabs__item -y">Хит</p>
+									<p class="products-day__tabs__item -g">Sale</p>
+								</div>
+								<div class="products-day__left__slider">
+									<div class="product__item__slider">
+										<div>
+											<img src="./img/goods/goods_01.jpg" alt="">
+										</div>
+										<div>
+											<img src="./img/goods/goods_01.jpg" alt="">
+										</div>
+										<div>
+											<img src="./img/goods/goods_01.jpg" alt="">
+										</div>
 									</div>
-									<div class="products-day__icons__share">
-										<img src="./img/icons/share.svg" alt="" width="18px">
-										<p>Поделиться</p>
-									</div>
+									
 								</div>
 							</div>
-
+	
+							<div class="products-day__right">
+								<div class="products-day__rank">
+									<img src="./img/icons/Star1.svg" alt="">
+									<img src="./img/icons/Star1.svg" alt="">
+									<img src="./img/icons/Star1.svg" alt="">
+									<img src="./img/icons/Star1.svg" alt="">
+									<img src="./img/icons/Star1.svg" alt="">
+								</div>
+								<h3 class="products-day__rank__name">Кольцо из золота с бриллиантами</h3>
+								<p class="products-day__rank__articul">Артикул: 1012076</p>
+								<div class="products-day__promotion">
+									<div class="products-day__price">
+										<p class="products-day__real__price">22 000 ₽</p>
+										<p class="products-day__discount__price">22 000 ₽</p>
+										<p class="products-day__discount">-45%</p>
+										
+									</div>
+									<div class="deadline">
+										<div class="deadline-format">
+											<div class="deadline-item">
+												<h4 class="hours"></h4>
+												<span>часов</span>
+											</div>
+										</div>
+										
+										<div class="deadline-format">
+											<div class="deadline-item">
+												<h4 class="mins"></h4>
+												<span>минут</span>
+											</div>
+										</div>
+										
+										<div class="deadline-format">
+											<div class="deadline-item">
+												<h4 class="seconds"></h4>
+												<span>секунд</span>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+								<div class="products-day__color">
+									<p class="products-day__color__text">Цвет</p>
+									<div class="products-day__color-list">
+										<button class="products-day__color-button">
+											<span class="products-day__color-button__grey"></span>
+										</button>
+										<button class="products-day__color-button">
+											<span class="products-day__color-button__orange"></span>
+										</button>
+										<button class="products-day__color-button">
+											<span class="products-day__color-button__brown"></span>
+										</button>
+										<button class="products-day__color-button">
+											<span class="products-day__color-button__green"></span>
+										</button>
+									</div>
+								</div>
+								<div class="products-day__size">
+									<div class="products-day__size__top">
+										<p class="products-day__size-text">Размер</p>
+										<button class="producst-day__size__info">?</button>
+									</div>
+									<div class="products-day__size__bottom">
+										<buttton class="products-day__size__button">16,5</buttton>
+										<buttton class="products-day__size__button">17,5</buttton>
+										<buttton class="products-day__size__button">18,5</buttton>
+										<buttton class="products-day__size__button">19,5</buttton>
+										<buttton class="products-day__size__button">20</buttton>
+										<buttton class="products-day__size__button">21</buttton>
+										<buttton class="products-day__size__button">22</buttton>
+										<buttton class="products-day__size__button">23</buttton>
+										<buttton class="products-day__size__button">24</buttton>
+										<buttton class="products-day__size__button">25</buttton>
+									</div>
+								</div>
+							
+							
+									
+								
+								<div class="products-day__action">
+									<div class="products-day__buttons">
+										<button class="btn">в корзину</button>
+										<button class="btn">купить в 1 клик</button>
+									</div>
+									<div class="products-day__icons">
+										<div class="products-day__icons__save">
+											<img src="./img/icons/like.svg" alt="" width="18px">
+											<p>Сохранить</p>
+										</div>	
+										<div class="products-day__icons__compare">
+											<img src="./img/icons/statistics.svg" alt="" width="14px">
+											<p>Сравнить</p>
+										</div>
+										<div class="products-day__icons__share">
+											<img src="./img/icons/share.svg" alt="" width="18px">
+											<p>Поделиться</p>
+										</div>
+									</div>
+								</div>
+	
+							</div>
 						</div>
+
+
+						
+
+
+
+					
 					</div>
 					
 				</section>
@@ -623,7 +785,6 @@
 				</section>
 
 			
-
 			</main>
 		</div>
 		
@@ -640,7 +801,8 @@
 
 
 <script src="./js/script.js"></script>
-<script src="./js/timer.js"></script>		
+<script src="./js/timer.js"></script>
+	
 
 	</body>
 </html>

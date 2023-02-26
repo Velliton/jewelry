@@ -1,0 +1,69 @@
+
+.product__item__slider{
+	position: relative;
+	max-width: 520px;
+    margin:0 auto;
+}
+
+.product__item__slider .slick-list{
+	overflow: hidden;
+}
+.product__item__slider .slick-track{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.product__item__slider .slick-arrow{
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+
+}
+.product__item__slider .slick-arrow.slick-prev{
+	
+	font-size: 0;
+    position: absolute;
+    left: 0;
+}
+.product__item__slider .slick-arrow.slick-prev::after{
+	content: "";
+	display: block;
+	background-image: url("../../img/icons/arrow.svg");
+	background-repeat: no-repeat;
+    background-size: 70%;
+	width: 30px;
+	height: 30px; 
+	position: absolute;
+    transform: rotate(90deg);
+}
+
+.product__item__slider .slick-arrow.slick-prev:hover{
+	background: #F5F5F5;
+}
+.product__item__slider .slick-arrow.slick-prev:active::after{
+	left: 2px;
+	transition: left 0.3s ease-in-out;
+}
+
+
+
+.product__item__slider .slick-arrow.slick-next{
+
+	font-size: 0;
+	position: absolute;
+    right: 0;
+	
+}
+.product__item__slider .slick-arrow.slick-next::after{
+	content: "";
+	display: block;
+	background-image: url("../../img/icons/arrow.svg");
+	background-repeat: no-repeat;
+    background-size: 70%;
+    transform: rotate(-90deg);
+	width: 30px;
+	height: 30px;  
+	position: absolute;
+	
+}

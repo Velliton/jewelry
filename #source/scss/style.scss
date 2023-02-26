@@ -22,6 +22,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 @import "./main-slider.scss";
 @import "./sail-slider.scss";
 @import "./sail-item-slider.scss";
+@import "./product-slider.scss";
+@import "./product-item-slider.scss";
+
+
 //миксины
 @mixin flexbox(){
 	display: -webkit-box;
@@ -317,9 +321,25 @@ h3{
 }
 
 
+.product__slider__item{
+	display: flex;
+	
+}
+.slider__buttons{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
 .products-day{
+	&__top{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 	&__body{
 		display: flex; 
+		flex-direction: column;
 		justify-content: space-between;
 	}
 	&__left{
@@ -333,10 +353,13 @@ h3{
 			
 		
 		}
+		&__slider{
+			
+		}
 	}
 	&__right{
 		
-		flex: 1 0 auto;
+		flex: 1 1 auto;
 	}
 	&__tabs__item{
 		padding: 3px 10px 3px 10px;
@@ -358,20 +381,21 @@ h3{
 		&__articul{
 			line-height: 14px;
 			color: #8F8F8F;
-			margin-bottom: 27px;
+			margin-bottom: 0px;
 		}
 	}
 	&__promotion{
 		display: flex;
 		justify-content: space-between;
-		align-items: flex-end;
-		margin-bottom: 60px;
+		align-items: center;
+		margin-bottom: 35px;
 		padding-bottom: 20px;
 		border-bottom: 1px solid #F0F0F0;
 	}
 	&__price{
 		display: flex;
 		align-items: flex-end;
+		margin-top: 25px;
 	}
 	&__timer{
 		display: flex;
@@ -398,7 +422,7 @@ h3{
 	}
 	&__color{
 		
-		margin-bottom:20px;
+		margin-bottom:25px;
 		&-list{
 			display: flex;
 			gap: 9px;	
@@ -483,15 +507,20 @@ h3{
 		}
 	}
 	&__size{
-
 		display: flex;
 		flex-direction: column;
 		gap: 10px;
 		margin-bottom: 30px;
+		&-text{
+			text-transform: uppercase;
+			font-size: 12px;
+			font-weight: 600;
+		}
 		&__top{
 			display: flex;
-			gap: 10px;
-			margin-bottom: 20px;
+			gap: 18px;
+			margin-bottom: 8px;
+			align-items: center;
 		}
 		&__bottom{
 			display: flex;
@@ -521,6 +550,9 @@ h3{
 		margin-top: -10px;
 		&__link{
 			margin-right: 10px;
+			&:hover{
+				text-decoration: underline;
+			}
 		}
 	}
 	&__top{
@@ -596,10 +628,6 @@ h3{
 		}
 	}
 }
-
-
-
-
 
 
 

@@ -23,7 +23,26 @@ $(document).ready(function() {
         slidesToShow: 1,
         adaptiveHeight:true,        
     });
-
+   
+    $('.product__item__slider').slick({
+        arrows: true,
+        dots: false,
+        cssEase: 'linear',
+        slidesToShow: 1,
+        adaptiveHeight:true,
+          
+    });
+    $('.product__slider').slick({
+        arrows: true,
+        dots: false,
+        cssEase: 'linear',
+        slidesToShow: 1,
+        adaptiveHeight:true,
+        swipe: false,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next'),
+                
+    });
 })
 
 

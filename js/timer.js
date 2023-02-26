@@ -37,7 +37,7 @@ function getRemainingTime(){
     let seconds=Math.floor((t%oneMinute)/oneSecond);
   
 
-    const values=[hours,minutes,seconds];
+    const values=[hours,minutes,seconds,hours,minutes,seconds,hours,minutes,seconds,];
 
     function format(item)
     {
