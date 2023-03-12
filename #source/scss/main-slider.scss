@@ -100,3 +100,62 @@
 .main-slider .slick-dots li.slick-active button{
 	background-color: #000000;
 }
+
+.slider{
+	margin-bottom: 105px;
+	&__item{
+		background: #F8F8F8;
+		display: flex;
+		justify-content: space-around;
+	}
+	&__description{
+		margin-top: 176px;
+		margin-left: 70px;
+		&__subject{
+			font-family: 'Prata';
+			color:#303030;
+			font-size: 20px;
+			margin-bottom: 30px;
+		}
+		&__title{
+			margin-bottom: 54px;
+		}
+	}
+	
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+	.slider{
+		
+		&__description{
+			margin-left: 9%;
+			&__title{
+				font-size: 34px;
+			}
+		}
+		
+	}
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.slider{
+		margin-bottom: 60px;
+		&__description{
+			margin-top: 130px;
+			margin-left: 10%;
+			&__title{
+				font-size: 34px;
+			}
+			
+		}
+		&__image{
+			
+			img{
+				max-width: 100%;
+			}
+		}
+	}
+}

@@ -24,7 +24,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 @import "./sail-item-slider.scss";
 @import "./product-slider.scss";
 @import "./product-item-slider.scss";
-
+@import "./articles.scss";
+@import "./discount.scss";
 
 //миксины
 @mixin flexbox(){
@@ -142,40 +143,21 @@ h3{
 
 
 
-.slider{
-	margin-bottom: 105px;
-	&__item{
-		background: #F8F8F8;
-		display: flex;
-		justify-content: space-around;
-	}
-	&__description{
-		margin-top: 176px;
-		margin-left: 70px;
-		&__subject{
-			font-family: 'Prata';
-			color: $text-color;
-			font-size: 20px;
-			margin-bottom: 30px;
-		}
-		&__title{
-			margin-bottom: 54px;
-		}
-	}
-	
-}
+
 
 
 
 
 .popular{
+	display: flex;
+	flex-direction: column;
 	margin-bottom: $mb-section;
 	&__bottom{
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		flex-wrap: wrap;
-		gap: 20px;
+		gap: 10px;
 	}
 	&__item{
 		display: flex;
@@ -278,47 +260,6 @@ h3{
 	}
 }
 
-.discount{
-	display: flex;
-	justify-content: space-between;
-	/* flex-wrap: wrap; */
-	gap: 1rem;
-	margin-bottom: $mb-section;
-	
-	&__item{
-		max-width: 420px;
-		display: flex;
-		background: #F8F8F8;
-		
-	}
-	&__description{
-		
-	}
-	&__text{
-		font-size: 20px;
-		color: #303030;
-    	line-height: 32px;
-		font-weight: 600;
-		text-transform: uppercase;
-		margin:80px 0 20px 30px;
-	}
-	&__count{
-		
-		
-		&__text{
-			margin-right: 60px;
-			padding: 10px 0px 5px 10px;
-			background-color: #E24B33;
-			color: #F0F0F0;
-			font-size: 23px;
-			span{
-				font-size: 40px;
-			}
-		}
-	}
-	
-
-}
 
 
 .product__slider__item{
@@ -544,61 +485,6 @@ h3{
 
 
 
-.articles{
-	padding-bottom: 100px;
-	&__right{
-		margin-top: -10px;
-		&__link{
-			margin-right: 10px;
-			&:hover{
-				text-decoration: underline;
-			}
-		}
-	}
-	&__top{
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		a{
-			color: #303030;
-			font-size: 14px;
-			text-transform: uppercase;
-		}
-
-	}
-	&__bottom{
-		
-		display: flex;
-		justify-content: space-between;
-		align-items: flex-start;
-		flex-wrap: wrap;
-		gap: 10px;
-		
-	}
-	&__item{
-		max-width: 312px;
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		align-items: flex-start;
-		
-		&:hover{
-			opacity: 0.6;
-		}
-	}
-	&__date{
-		font-size: 14px;
-		color: #8F8F8F;
-		margin-bottom: 10px;
-	}
-	&__image{
-		margin-bottom: 20px;
-	}
-	&__subtitle{
-		line-height: 25px;
-	}
-	
-}
 
 .deadline{
 	margin-right: 160px;
@@ -635,52 +521,4 @@ h3{
 
 
 /* 
-@media (max-width:767px){
-	.header__burger{
-		position: absolute;
-		display: block;
-		width: 30px;
-		height: 20px;
-		z-index: 200;
-		&::before{
-			content: '';
-			background-color: rgb(236, 47, 47);
-			position: absolute;
-			width: 100%;
-			height: 2px;
-			left: 0;
-		}
-		&::after{
-			content: '';
-			background-color: rgb(236, 47, 47);
-			position: absolute;
-			width: 100%;
-			height: 2px;
-			left: 0;
-		}
-		&::before{
-			top: 0;
-		}
-		&::after{
-			bottom: 0;
-		}
-		span{
-			position: absolute;
-			width: 100%;
-			height: 2px;
-			left: 0;
-			top: 9px;
-			background-color: rgb(236, 47, 47);
-		}
-		
-	}
-	.header__menu{
-		position: fixed;
-		top: 0%;
-		left: 0;
-		z-index: 150;
-		width: 100%;
-		height: 100%;
-		background-color: #fff;
-	}
-} */
+ */
